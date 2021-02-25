@@ -4,6 +4,132 @@
     box-sizing: border-box;
 }
 
+body {
+	height: 100vh;
+	width: 100vw;
+	/* display: flex;
+	justify-content: center; */
+	align-items: center;
+	background: #FFF;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Button */
+.button {
+    height: 38px;
+    color: #fff;
+    padding: 0.6rem 3.2rem;
+    border-radius: 4px;
+    transition: all 0.15s;
+}
+
+.button-primary {
+    border: 1px solid #FF263F;
+    background: #FF263F;
+    color: #fff;
+    outline: 0;
+}
+
+.button-primary:hover {
+    background: #f2001c;
+    border-bottom: 1px solid #bf0016;
+    transform: scale(1.05);
+    box-shadow: 0 0 4px #ccc;
+}
+.button-primary:active {
+    transform: scale(0.95);
+    border-top: 1px solid #d90019;
+    background: #ff0d28;
+    border-bottom: 1px solid #ff0d28;
+    outline: 0;
+}
+
+/* Card */
+.card {
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	text-align: center;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+.card:first-of-type {
+    margin-right: 25px;
+}
+
+.card:hover {
+    margin-top: -1.5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.banner {
+	height: 100px;
+	width: 100%;
+	padding-top: 30px;
+	background-color: #FAFAFA;
+	background-size: cover;
+	background-position: center;
+}
+
+.avatar {
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+	background-color: #F1F1F1;
+	border-radius: 100%;
+    background-image: url("");
+}
+
+h3, a, i {
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+h3 {
+    margin-top: 45px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #212121;
+}
+
+a {
+    display: block;
+    padding: 5px 0px;
+    font-size: 14px;
+    color: #9E9E9E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+ul {
+	margin-top: 10px;
+	padding: 15px 0px;
+	background-color: #FAFAFA;
+}
+
+ul a {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul a:last-of-type {
+    margin-right: 0px;
+}
+
+ul a i:hover {
+    transform: scale(1.5);
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
 
