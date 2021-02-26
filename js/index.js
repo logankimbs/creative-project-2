@@ -62,28 +62,30 @@ function displayCats(data) {
 function displayData(data) {
     console.log(data);
     let html = `
-    <table class="table table-borderless">
-        <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Number</th>
-            </tr>
-        </thead>
-        <tbody>`;
+    <div class="table-responsive-sm">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Number</th>
+                </tr>
+            </thead>
+            <tbody>`;
 
     for (let i = 0; i < data.results.length; i++) {
         html += `
-            <tr>
-                <td>${data.results[i].name.first + " " + data.results[i].name.last}</td>
-                <td>${data.results[i].email}</td>
-                <td>${data.results[i].phone}</td>
-            </tr>`;
+                <tr>
+                    <td>${data.results[i].name.first + " " + data.results[i].name.last}</td>
+                    <td>${data.results[i].email}</td>
+                    <td>${data.results[i].phone}</td>
+                </tr>`;
     }
 
     html += `
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
     `;
 
     document.getElementById("friends").innerHTML = html;
