@@ -16,10 +16,17 @@
     background-color: #0d6dfd93;
     border-color: #0d6dfd93;
 }
+.btn-under {
+    margin-top: 12px;
+}
 
 .display-4 {
     margin-bottom: 18px;
     letter-spacing: 2px;
+}
+
+#friends {
+    margin-bottom: 100px;
 }
   
 .waves {
@@ -32,6 +39,15 @@
 
 th {
     font-size: large;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 0;
+    background: #0d6dfd;
+    color: white;
 }
 
 /* Animation */
